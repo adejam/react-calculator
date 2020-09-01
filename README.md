@@ -26,7 +26,6 @@ The project demonstrates the use of React to create a calculator app.
 
 - [NPM](https://www.npmjs.com/)
 
-
 ## Live Demo
 
 [React-calculator)

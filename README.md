@@ -1,119 +1,68 @@
-# REACT-CALCULATOR
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-> React-calculator is a calculator app designed using HTML,CSS and Javascript and React.
+## Available Scripts
 
-![screenshot](./app_screenshot.png)
+In the project directory, you can run:
 
-The project demonstrates the use of React to create a calculator app.
+### `npm start`
 
-## Technology Used
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- HTML
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-  - Semantic HTML
+### `npm test`
 
-- CSS
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-  - CSS Flexbox
+### `npm run build`
 
-- [React](https://reactjs.org/)
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- Javascript
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
 
-- [Webpack](https://webpack.js.org/)
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- [stylint](https://stylelint.io/)
+### `npm run eject`
 
-- [NPM](https://www.npmjs.com/)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-## Live Demo
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-[React-calculator)
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-### Development (Running locally)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-- Clone the project
+## Learn More
 
-```bash
-git clone https://github.com/adejam/react-calculator.git
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-```
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-- Install Dependencies
+### Code Splitting
 
-```bash
-npm install
-```
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
 
-To run StyleLint by itself, you may run the lint task:
+### Analyzing the Bundle Size
 
-```bash
-npm run lint:check
-```
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
 
-Or to automatically fix issues found (where possible):
+### Making a Progressive Web App
 
-```bash
-npm run lint
-```
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
 
-You can also check against Prettier:
+### Advanced Configuration
 
-```bash
-npm run format:check
-```
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-and to have it actually fix (to the best of its ability) any format issues, run:
+### Deployment
 
-```bash
-npm run format
-```
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
 
-You can also check against HTML Validator:
+### `npm run build` fails to minify
 
-```bash
-npm run html-validator
-```
-
-## Style Guides
-
-- [CSS Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/css.html)
-- [HTML Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/index.html)
-- [JavaScript Style Guide](http://udacity.github.io/frontend-nanodegree-styleguide/javascript.html)
-- [Git Style Guide](https://udacity.github.io/git-styleguide/)
-
-## 👤 Author
-
-### Adeleye Jamiu
-
-- Github: [@adejam](http://github.com/adejam)
-- Twitter: [@adeleye_oj](https://twitter.com/Adeleye_oj)
-- LinkedIn: [@adeleye-jamiu](https://linkedin.com/in/adeleye-jamiu)
-
-## 🤝 Contributing
-
-Contributions, issues and feature requests are welcome!
-
-Feel free to check the [issues page](../../issues).
-
-## Show your support
-
-Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- [@bolah2009](http://github.com/bolah2009)
-
-- [The Odin ProJect](https://theodinproject.com/courses/javascript/lessons/todo-list?ref=lnav)
-
-- [W3c](https://www.w3.org/)
-
-- [MDN](https://developer.mozilla.org/)
-
-- [w3schools](https://www.w3schools.com/)
-
-- [React](https://reactjs.org/)
-
-## 📝 License
-
-[MIT licensed](./LICENSE).
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify

@@ -28,7 +28,7 @@ The project demonstrates the use of React to create a calculator app.
 
 ## Live Demo
 
-[React-calculator](https://deploy-preview-1--adejam-react-calc.netlify.app/)
+[React-calculator](https://adejam-react-calc.netlify.app/)
 
 ### Development (Running locally)
 

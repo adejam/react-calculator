@@ -1,0 +1,58 @@
+.App {
+  width: 700px;
+  margin: 100px auto;
+}
+
+.App,
+.buttonPanel,
+.display {
+  display: flex;
+}
+
+.App,
+.buttonPanel {
+  display: flex;
+  flex-direction: column;
+}
+
+.display {
+  background-color: #808080;
+  align-items: center;
+  justify-content: flex-end;
+  color: #fff;
+  padding-right: 20px;
+  font-size: 2.5em;
+}
+
+.display,
+.row,
+.button {
+  font-family: inherit;
+  height: 100px;
+  font-weight: bold;
+}
+
+.row,
+.button {
+  font-size: 1.8em;
+}
+
+.button {
+  width: 25%;
+}
+
+.wide {
+  width: 50%;
+}
+
+.color {
+  background-color: orange;
+}
+
+.color:last-child {
+  background-color: #fe9291;
+}
+
+.color:hover {
+  opacity: 0.8;
+}

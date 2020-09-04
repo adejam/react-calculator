@@ -9,13 +9,13 @@ const ButtonPanel = () => {
     ['1', '2', '3', '+'],
     ['0', '.', '='],
   ];
-
+  const size = sign => (sign === '0' ? 'wide' : '');
   return (
-    <div>
+    <div className="buttonPanel">
       {symbols.map(symbol => (
         <div className="row" key={symbol}>
           {symbol.map(sign => (
-            <Button key={sign} buttonName={sign} />
+            <Button key={sign} color="color" wide={size(sign)} buttonName={sign} />
           ))}
         </div>
       ))}

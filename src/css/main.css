@@ -39,6 +39,11 @@
 
 .button {
   width: 25%;
+  background-color: orange;
+}
+
+.button:hover {
+  opacity: 0.8;
 }
 
 .wide {
@@ -46,13 +51,5 @@
 }
 
 .color {
-  background-color: orange;
-}
-
-.color:last-child {
   background-color: #fe9291;
-}
-
-.color:hover {
-  opacity: 0.8;
 }

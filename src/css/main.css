@@ -37,9 +37,8 @@
   font-size: 1.8em;
 }
 
-.button {
+.normalWidth {
   width: 25%;
-  background-color: orange;
 }
 
 .button:hover {
@@ -50,6 +49,10 @@
   width: 50%;
 }
 
-.color {
+.orange {
+  background-color: orange;
+}
+
+.pink {
   background-color: #fe9291;
 }

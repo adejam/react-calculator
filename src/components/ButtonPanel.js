@@ -9,8 +9,7 @@ const ButtonPanel = () => {
     ['1', '2', '3', '+'],
     ['0', '.', '='],
   ];
-  const size = sign => sign === '0' && true;
-  const changeColor = (ind, length) => (length === ind + 1 ? 'color' : '');
+  const changeColor = (index, length) => (length === index + 1 ? 'pink' : undefined);
   return (
     <div className="buttonPanel">
       {symbols.map(symbol => (
@@ -19,7 +18,7 @@ const ButtonPanel = () => {
             <Button
               key={sign}
               color={changeColor(index, symbol.length)}
-              wide={size(sign)}
+              wide={sign === '0'}
               buttonName={sign}
             />
           ))}

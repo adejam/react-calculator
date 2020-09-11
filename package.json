@@ -29,7 +29,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "npx jest",
     "eject": "react-scripts eject",
     "format": "npx prettier  --write **/*.{html,js,md,json,yaml,yml,jsx}",
     "format:check": "npx prettier  --check **/*.{html,js,md,json,yaml,yml,jsx}",
@@ -54,5 +54,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "jest": {
+    "collectCoverage": true
   }
 }

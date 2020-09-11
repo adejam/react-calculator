@@ -1,7 +1,7 @@
 import operate from './operate';
 
-const calculate = (dataObj, buttonName) => {
-  let { total, next, operation } = dataObj;
+const calculate = (dataObject, buttonName) => {
+  let { total, next, operation } = dataObject;
 
   const ArithmeticOperators = ['+', '-', 'X', '÷'];
 

@@ -5,8 +5,8 @@ test('calculate function exists', () => {
 });
 
 test('return type of calculate is a function', () => {
-  const dataObj = { total: null, next: null, operation: null };
-  expect(typeof calculate({ ...dataObj }, '2')).toBe('object');
+  const dataOblect = { total: null, next: null, operation: null };
+  expect(typeof calculate({ ...dataOblect }, '2')).toBe('object');
 });
 
 const arrayOne = ['2', '0', '+', '4', '0', '='];
@@ -24,16 +24,16 @@ const arrayFourMessage =
 
 const tester = (arrays, resultTotal, testMessage) => {
   test(testMessage, () => {
-    let dataObj = { total: null, next: null, operation: null };
+    let dataOblect = { total: null, next: null, operation: null };
 
     const result = { total: resultTotal, next: null, operation: null };
 
     arrays.forEach(num => {
-      dataObj = calculate({ ...dataObj }, num);
+      dataOblect = calculate({ ...dataOblect }, num);
       // console.log(dataObj, num);
     });
 
-    expect(dataObj).toEqual(result);
+    expect(dataOblect).toEqual(result);
   });
 };
 

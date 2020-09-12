@@ -30,6 +30,9 @@ const calculate = (dataObject, buttonName) => {
       total = operate(total, next, operation);
       next = null;
       operation = null;
+    } else if (next) {
+      total = next;
+      next = null;
     }
   } else if (ArithmeticOperators.includes(buttonName)) {
     if (total && next && operation) {
@@ -40,33 +43,57 @@ const calculate = (dataObject, buttonName) => {
       operation = buttonName;
     }
   } else if (numbers.includes(buttonName)) {
-    if (buttonName === '.') {
-      if (next) {
-        next += buttonName;
-      } else if (total) {
-        total += buttonName;
-      } else {
-        next = '0.';
-      }
-    } else if (buttonName !== '.') {
-      if (next) {
-        if (operation) {
-          if (total) {
+    if (next) {
+      if (operation) {
+        if (total) {
+          if (buttonName === '.') {
+            if (!next.includes(buttonName)) {
+              next += buttonName;
+            }
+          } else {
             next += buttonName;
+          }
+        } else if (!total) {
+          if (buttonName === '.') {
+            if (!next.includes(buttonName)) {
+              total = next;
+              next = buttonName;
+            }
           } else {
             total = next;
             next = buttonName;
           }
+        }
+      } else if (!operation) {
+        if (buttonName === '.') {
+          if (!next.includes(buttonName)) {
+            next += buttonName;
+          }
         } else {
           next += buttonName;
         }
-      } else if (!next) {
-        if (total) {
-          if (operation) {
-            next = buttonName;
+      }
+    } else if (!next) {
+      if (total) {
+        if (operation) {
+          if (buttonName === '.') {
+            if (!next.includes(buttonName)) {
+              next = '0.';
+            }
           } else {
-            total += buttonName;
+            next = buttonName;
           }
+        } else {
+          total = null;
+          if (buttonName === '.') {
+            next = '0.';
+          } else {
+            next = buttonName;
+          }
+        }
+      } else if (!total) {
+        if (buttonName === '.') {
+          next = '0.';
         } else {
           next = buttonName;
         }

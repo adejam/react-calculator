@@ -9,8 +9,12 @@ const calculate = (dataObject, buttonName) => {
   const modifierOrPercent = ['+/-', '%'];
   const modifierOrPercentFunc = (number, operator) => {
     if (next) {
+      if (operation && !total) {
+        operation = null;
+      }
       next = operate(next, number, operator);
     } else if (total) {
+      operation = null;
       total = operate(total, number, operator);
     }
   };
@@ -30,9 +34,6 @@ const calculate = (dataObject, buttonName) => {
       total = operate(total, next, operation);
       next = null;
       operation = null;
-    } else if (next) {
-      total = next;
-      next = null;
     }
   } else if (ArithmeticOperators.includes(buttonName)) {
     if (total && next && operation) {
@@ -57,7 +58,7 @@ const calculate = (dataObject, buttonName) => {
           if (buttonName === '.') {
             if (!next.includes(buttonName)) {
               total = next;
-              next = buttonName;
+              next = '0.';
             }
           } else {
             total = next;

@@ -77,9 +77,7 @@ const calculate = (dataObject, buttonName) => {
       if (total) {
         if (operation) {
           if (buttonName === '.') {
-            if (!next.includes(buttonName)) {
-              next = '0.';
-            }
+            next = '0.';
           } else {
             next = buttonName;
           }

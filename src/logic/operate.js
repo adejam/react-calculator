@@ -15,7 +15,7 @@ const operate = (numberOne, numberTwo, operation) => {
       result = bigNumberOne.times(numberTwo);
       break;
     case '÷':
-      if (numberTwo === '0' || numberTwo === '0.0') {
+      if (Big(0).toString() === Big(numberTwo).toString()) {
         result = 0;
       } else {
         result = bigNumberOne.div(numberTwo);

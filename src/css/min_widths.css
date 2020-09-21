@@ -1,0 +1,21 @@
+@media (min-width: 576px) {
+  .App {
+    width: 380px;
+  }
+
+  .row,
+  .button {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    width: 700px;
+  }
+
+  .row,
+  .button {
+    font-size: 1.5em;
+  }
+}

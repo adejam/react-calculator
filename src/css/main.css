@@ -1,6 +1,7 @@
 .App {
-  width: 700px;
+  width: 300px;
   margin: 100px auto;
+  min-height: 380px;
 }
 
 .App,
@@ -11,7 +12,6 @@
 
 .App,
 .buttonPanel {
-  display: flex;
   flex-direction: column;
 }
 
@@ -34,7 +34,7 @@
 
 .row,
 .button {
-  font-size: 1.8em;
+  font-size: 1.1em;
 }
 
 .normalWidth {

@@ -3,9 +3,19 @@
     width: 380px;
   }
 
+  .display {
+    font-size: 2em;
+  }
+
   .row,
   .button {
     font-size: 1.3em;
+  }
+
+  .display,
+  .row,
+  .button {
+    height: 100px;
   }
 }
 
@@ -17,5 +27,9 @@
   .row,
   .button {
     font-size: 1.5em;
+  }
+
+  .display {
+    font-size: 2.5em;
   }
 }

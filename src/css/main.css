@@ -6,7 +6,8 @@
 
 .App,
 .buttonPanel,
-.display {
+.display,
+.operation {
   display: flex;
 }
 
@@ -18,17 +19,22 @@
 .display {
   background-color: #808080;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   color: #fff;
-  padding-right: 20px;
-  font-size: 2.5em;
+  padding: 10px 20px 0;
+  font-size: 1.5em;
+}
+
+.operation {
+  align-self: flex-start;
+  font-size: 0.4em;
 }
 
 .display,
 .row,
 .button {
   font-family: inherit;
-  height: 100px;
+  height: 50px;
   font-weight: bold;
 }
 

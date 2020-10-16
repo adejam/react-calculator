@@ -1,0 +1,35 @@
+@media (min-width: 576px) {
+  .App {
+    width: 380px;
+  }
+
+  .display {
+    font-size: 2em;
+  }
+
+  .row,
+  .button {
+    font-size: 1.3em;
+  }
+
+  .display,
+  .row,
+  .button {
+    height: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .App {
+    width: 700px;
+  }
+
+  .row,
+  .button {
+    font-size: 1.5em;
+  }
+
+  .display {
+    font-size: 2.5em;
+  }
+}

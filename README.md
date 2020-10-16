@@ -6,6 +6,11 @@
 
 The project demonstrates the use of React to create a calculator app.
 
+## Features
+
+- Basic binary operations
+- Calculations with big numbers
+
 ## Technology Used
 
 - HTML
@@ -20,16 +25,25 @@ The project demonstrates the use of React to create a calculator app.
 
 - Javascript
 
+  - Arrow function.
+  - Destructuring assignment.
+  - Object literal
+  - Template literal
+  - Ternary Operators
+
+- [Big-js](https://www.npmjs.com/package/big-js)
+
 - [Webpack](https://webpack.js.org/)
 
 - [stylint](https://stylelint.io/)
 
 - [NPM](https://www.npmjs.com/)
 
+- [Jest](https://jestjs.io/)
 
 ## Live Demo
 
-[React-calculator)
+[React-calculator](https://adejam-react-calc.netlify.app/)
 
 ### Development (Running locally)
 

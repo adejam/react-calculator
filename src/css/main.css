@@ -1,0 +1,64 @@
+.App {
+  width: 300px;
+  margin: 100px auto;
+  min-height: 380px;
+}
+
+.App,
+.buttonPanel,
+.display,
+.operation {
+  display: flex;
+}
+
+.App,
+.buttonPanel {
+  flex-direction: column;
+}
+
+.display {
+  background-color: #808080;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 10px 20px 0;
+  font-size: 1.5em;
+}
+
+.operation {
+  align-self: flex-start;
+  font-size: 0.4em;
+}
+
+.display,
+.row,
+.button {
+  font-family: inherit;
+  height: 50px;
+  font-weight: bold;
+}
+
+.row,
+.button {
+  font-size: 1.1em;
+}
+
+.normalWidth {
+  width: 25%;
+}
+
+.button:hover {
+  opacity: 0.8;
+}
+
+.wide {
+  width: 50%;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pink {
+  background-color: #fe9291;
+}

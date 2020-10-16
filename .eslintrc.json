@@ -20,5 +20,5 @@
     "arrow-parens": ["error", "as-needed"],
     "prettier/prettier": "error"
   },
-  "ignorePatterns": ["dist/", "build/", "coverage/"]
+  "ignorePatterns": ["dist/", "build/", "coverage/", "src/serviceWorker.js"]
 }
